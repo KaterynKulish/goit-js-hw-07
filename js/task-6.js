@@ -8,7 +8,7 @@ buttonCreate.addEventListener('click', createBoxes);
 buttonDestroy.addEventListener('click', destroyBoxes);
 
 function createBoxes() {
-  if (Number(input.value) < 0 || Number(input.value) <= 100) {
+  if (Number(input.value) < 0 && Number(input.value) <= 100) {
     createBox(Number(input.value));
   }
 }
@@ -38,3 +38,5 @@ function getRandomHexColor() {
     .toString(16)
     .padStart(6, 0)}`;
 }
+
+console.log(_);
